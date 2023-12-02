@@ -1,0 +1,56 @@
+.header {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 55px;
+            object-fit: cover;
+        }
+
+        .titles {
+            margin: 4px;
+
+            .title1 {
+                font-family: 'Lilita One', sans-serif;
+                font-size: 35px;
+                line-height: 0.40;
+            }
+
+            .title2{
+                color: gray
+            }
+
+        }
+    }
+
+    .basket{
+        display: flex;
+        align-items: center;
+        padding: 10px 0px;
+        background-color: #b0272e;
+        color: white;
+        border-radius: 20px;
+
+        .price{
+            margin: 0 18px;
+        }
+
+        .myBasket{
+            display: flex;
+            align-items: center;
+            margin: 0 18px;
+        }
+        img{
+            width: 20px;
+            filter: invert(100%); 
+        }
+    }
+}
