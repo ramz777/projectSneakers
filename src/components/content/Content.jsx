@@ -47,7 +47,7 @@ const Content = () => {
         <div className={s.content}>
             {
                 shoes.map(item => {
-                    return <Shoes {...item} />
+                    return <Shoes key={item.id} {...item} />
                 })
             }
         </div>

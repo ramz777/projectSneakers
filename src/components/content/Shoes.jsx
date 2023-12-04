@@ -2,7 +2,7 @@ import { useState } from 'react';
 import s from './content.module.scss';
 
 
-const Shoes = ({ imgShoes, nameShoes, priceShoes, sizes }) => {
+const Shoes = ({ id, imgShoes, nameShoes, priceShoes, sizes }) => {
 
 
 
@@ -31,7 +31,7 @@ const Shoes = ({ imgShoes, nameShoes, priceShoes, sizes }) => {
             <div className={s.size}>
                 {
                     sizes.map((size, i) => {
-                        return <div onClick={() => setActiveIndex(i)} className={activeIndex === i? s.active: ''}>{size}</div>
+                        return <div key={size} onClick={() => setActiveIndex(i)} className={activeIndex === i? s.active: ''}>{size}</div>
                     })
                 }
             </div>
