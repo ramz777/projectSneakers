@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import s from './content.module.scss';
 
-
 const Shoes = ({ id, imgShoes, nameShoes, priceShoes, sizes }) => {
 
 
@@ -10,7 +9,7 @@ const Shoes = ({ id, imgShoes, nameShoes, priceShoes, sizes }) => {
 
     const addShoes = () => {
         setCountShoes(countShoes + 1)
-    }
+    } 
 
 
     const [activeIndex, setActiveIndex] = useState(0)
